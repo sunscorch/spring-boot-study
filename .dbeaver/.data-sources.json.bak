@@ -1,0 +1,29 @@
+{
+	"folders": {},
+	"connections": {
+		"h2_embedded-16d10c3b5e1-f054f33d5f17875": {
+			"provider": "generic",
+			"driver": "h2_embedded",
+			"name": "H2 Embedded - 新连接",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"url": "jdbc:h2:/Users/leisun/Documents/h2Storage",
+				"type": "dev",
+				"handlers": {}
+			}
+		},
+		"h2_embedded-16d10c3fba9-74896bcea7fcfd0d": {
+			"provider": "generic",
+			"driver": "h2_embedded",
+			"name": "H2 Embedded - 新连接 2",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"url": "jdbc:h2:/Users/leisun/Documents/h2Storage",
+				"type": "dev",
+				"handlers": {}
+			}
+		}
+	}
+}

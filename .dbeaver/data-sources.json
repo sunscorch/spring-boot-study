@@ -1,0 +1,33 @@
+{
+	"folders": {},
+	"connections": {
+		"h2_embedded-16d2af7f859-3e621224dbb4baee": {
+			"provider": "generic",
+			"driver": "h2_embedded",
+			"name": "H2 Embedded",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"url": "jdbc:h2:/Users/leisun/Documents/h2Storage;DB_CLOSE_ON_EXIT=FALSE",
+				"type": "dev",
+				"handlers": {}
+			}
+		}
+	},
+	"virtual-models": {
+		"h2_embedded-16d2af7f859-3e621224dbb4baee": {
+			"PUBLIC": {
+				":USER": {
+					"constraints": {
+						"PRIMARY": {
+							"type": "vpk",
+							"attributes": [
+								"ID"
+							]
+						}
+					}
+				}
+			}
+		}
+	}
+}

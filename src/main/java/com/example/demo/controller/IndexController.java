@@ -19,7 +19,7 @@ public class IndexController {
 	
 	@Autowired
 	UserMapper userMapper;
-	@RequestMapping("/")
+	@RequestMapping("/666")
 	String index(HttpServletResponse response, HttpServletRequest request){
 		Cookie[] cookies = request.getCookies();
 		if(cookies != null && cookies.length != 0) {

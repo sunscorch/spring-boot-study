@@ -1,33 +1,42 @@
 {
 	"folders": {},
 	"connections": {
-		"h2_embedded-16d2af7f859-3e621224dbb4baee": {
+		"h2_embedded-16d8703e4e0-b81142f8638f97a": {
 			"provider": "generic",
 			"driver": "h2_embedded",
-			"name": "H2 Embedded",
+			"name": "H2 Embedded - FALSE",
 			"save-password": true,
 			"read-only": false,
 			"configuration": {
-				"url": "jdbc:h2:/Users/leisun/Documents/h2Storage;DB_CLOSE_ON_EXIT=FALSE",
+				"database": "D:\\programs\\ELCIPSE\\h2Storage;DB_CLOSE_ON_EXIT=FALSE",
+				"url": "jdbc:h2:D:\\programs\\ELCIPSE\\h2Storage;DB_CLOSE_ON_EXIT=FALSE",
+				"type": "dev"
+			}
+		},
+		"mysql8-16dca50d72d-32e19f74d75b1d7": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "MySQL 8+ - db",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "172.96.244.235",
+				"port": "3306",
+				"database": "db",
+				"url": "jdbc:mysql://172.96.244.235:3306/db",
 				"type": "dev",
 				"handlers": {}
 			}
 		}
 	},
-	"virtual-models": {
-		"h2_embedded-16d2af7f859-3e621224dbb4baee": {
-			"PUBLIC": {
-				":USER": {
-					"constraints": {
-						"PRIMARY": {
-							"type": "vpk",
-							"attributes": [
-								"ID"
-							]
-						}
-					}
-				}
-			}
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
 		}
 	}
 }

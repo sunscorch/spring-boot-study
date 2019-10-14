@@ -1,15 +1,17 @@
 package com.example.demo.componnet;
 
 
-import org.springframework.web.servlet.HandlerInterceptor;
-import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.HandlerInterceptor;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * 登陆检查，
  */
+@Component
 public class LoginHandlerInterceptor implements HandlerInterceptor {
     //目标方法执行之前
     @Override
